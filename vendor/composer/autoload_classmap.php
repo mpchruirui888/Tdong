@@ -758,7 +758,6 @@ return array(
     'Illuminate\\Auth\\Events\\Authenticated' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Events/Authenticated.php',
     'Illuminate\\Auth\\Events\\Failed' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Events/Failed.php',
     'Illuminate\\Auth\\Events\\Lockout' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Events/Lockout.php',
-    'Illuminate\\Auth\\Events\\Login' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Events/Login.php',
     'Illuminate\\Auth\\Events\\Logout' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Events/Logout.php',
     'Illuminate\\Auth\\Events\\OtherDeviceLogout' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Events/OtherDeviceLogout.php',
     'Illuminate\\Auth\\Events\\PasswordReset' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/Events/PasswordReset.php',

@@ -1139,7 +1139,6 @@ class ComposerStaticInitf0cf6f7aba8d2ca53e00db8840a4d971
         'Illuminate\\Auth\\Events\\Authenticated' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Authenticated.php',
         'Illuminate\\Auth\\Events\\Failed' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Failed.php',
         'Illuminate\\Auth\\Events\\Lockout' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Lockout.php',
-        'Illuminate\\Auth\\Events\\Login' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Login.php',
         'Illuminate\\Auth\\Events\\Logout' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Logout.php',
         'Illuminate\\Auth\\Events\\OtherDeviceLogout' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/OtherDeviceLogout.php',
         'Illuminate\\Auth\\Events\\PasswordReset' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/PasswordReset.php',
