@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="855087a4-2dbb-4145-91cd-fbf2210ae99b" name="天冬" url="http://39.101.184.239">
+        <fileTransfer host="39.101.184.239" port="22" rootFolder="/var/www/html/Tdong/Tdong" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
