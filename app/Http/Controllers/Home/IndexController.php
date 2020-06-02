@@ -13,4 +13,9 @@ class IndexController extends Controller
     {
         dd(12342);
     }
+
+    public function test()
+    {
+        dd('测试分支');
+    }
 }
