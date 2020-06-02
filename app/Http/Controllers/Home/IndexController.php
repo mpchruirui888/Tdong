@@ -21,6 +21,6 @@ class IndexController extends Controller
 
     public function develop()
     {
-        dd('测试develop了');
+        dd('测试develop了1234');
     }
 }
