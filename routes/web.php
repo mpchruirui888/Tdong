@@ -11,6 +11,13 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::group(['prefix' => 'home'],function(){
+        Route::get('index','App\Http\Controllers\Home\IndexController@index');
 });
