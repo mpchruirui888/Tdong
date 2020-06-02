@@ -21,4 +21,5 @@ Route::get('/', function () {
 Route::group(['prefix' => 'home'],function(){
         Route::get('index','Home\IndexController@index');
         Route::get('test','Home\IndexController@test');
+        Route::get('develop','Home\IndexController@develop');
 });
