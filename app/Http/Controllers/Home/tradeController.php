@@ -12,11 +12,11 @@ use Illuminate\Support\Facades\DB;
 
 class tradeController extends Controller
 {
-
-    //
+    /**  测试以redis为驱动的消息队列 （success）
+     * @return string
+     */
     public function trade()
     {
-
          Order::insert(['order_sn'=>time(),'price'=>10,'status'=>1,'add_time'=>time()]);
          $res= DB::getPdo()->lastInsertId();
          $row =Order::where(['id'=>$res])->first()->toArray();

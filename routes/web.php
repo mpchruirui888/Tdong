@@ -23,4 +23,14 @@ Route::group(['prefix' => 'home'],function(){
         Route::get('test','Home\IndexController@test');
         Route::get('develop','Home\IndexController@develop');
         Route::get('trade','Home\tradeController@trade');
+
+        Route::get('kill','Home\seckillController@seckillDemo');  //不加redis卖  看是否会产生超卖
+        Route::get('seckill','Home\seckillController@sckill');  //不加redis卖  看是否会产生超卖
+
+
+        Route::get('quick','Home\SortController@quick');
+
+        Route::get('sql','Home\SqlController@testSql');
 });
+
+
