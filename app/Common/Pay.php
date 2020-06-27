@@ -69,7 +69,6 @@ class Pay
         if( !empty($result['result_code']) && !empty($result['err_code']) ){
             $result['err_msg'] = $this->error_code( $result['err_code'] );
         }
-        dd($result);
         if($result['result_code'] == 'SUCCESS' && $result['return_msg'] == 'OK'){
             //发起微信支付url
             $pay_url = $result['mweb_url'].'&redirect_url='.urlencode($this->redirect_url);

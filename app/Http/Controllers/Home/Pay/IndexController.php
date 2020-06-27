@@ -21,7 +21,7 @@ class IndexController extends Controller
         $pay->redirect_url = 'http://share.xiongmaotaoxue.com/mobile/homework/index/index?user_id=30874&grade_id=2';
         $result =  $pay->unifiedOrder(30874,1,0.01);
 
-        
+
        return json_encode(['code'=>200,'data'=>$result,'msg'=>'ok']);
     }
 }
