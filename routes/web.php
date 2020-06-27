@@ -33,4 +33,8 @@ Route::group(['prefix' => 'home'],function(){
         Route::get('sql','Home\SqlController@testSql');
 });
 
-
+//支付测试
+Route::group(['prefix' => 'home'],function(){
+    Route::get('pay-index','Home\Pay\IndexController@index');
+    Route::get('wx-pay','Home\Pay\IndexController@WxPay');
+});

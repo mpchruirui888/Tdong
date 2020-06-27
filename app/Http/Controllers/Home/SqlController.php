@@ -8,7 +8,6 @@ use App\Http\Controllers\Controller;
 
 class SqlController extends Controller
 {
-    //
     /**
      *   SQL注入风险  laravel处理
      */
