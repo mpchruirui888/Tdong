@@ -37,4 +37,5 @@ Route::group(['prefix' => 'home'],function(){
 Route::group(['prefix' => 'home'],function(){
     Route::get('pay-index','Home\Pay\IndexController@index');
     Route::get('wx-pay','Home\Pay\IndexController@WxPay');
+    Route::get('ali-pay','Home\Pay\IndexController@AliPay');
 });

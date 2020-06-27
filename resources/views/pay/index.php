@@ -20,7 +20,7 @@
             <button class="btn-info btn-sm" onclick="wx()">微信支付</button>
         </div>
         <div class="col-xs-4 ">
-            <button class="btn-primary btn-sm">支付宝支付</button>
+            <button class="btn-primary btn-sm" onclick="ali()">支付宝支付</button>
         </div>
     </div>
 </div>
@@ -33,6 +33,20 @@
             success: function (res) {
                 var resData = JSON.parse(res);
                 window.location.href = resData.data
+            }
+        })
+    }
+    function ali(){
+        $.ajax({
+            type: "get",
+            url: 'ali-pay/',
+            success: function (res) {
+                var resData = JSON.parse(res);
+                const div = document.createElement('div')
+                div.id = 'alipay'
+                div.innerHTML = resData.data
+                document.body.appendChild(div)
+                document.querySelector('#alipay').children[0].submit() // 执行后会唤起支付宝
             }
         })
     }
