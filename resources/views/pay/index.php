@@ -28,7 +28,7 @@
 <script>
     function wx(){
         $.ajax({
-            type: "post",
+            type: "get",
             url: 'wx-pay/',
             success: function (res) {
                 var resData = JSON.parse(res);
