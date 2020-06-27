@@ -22,6 +22,10 @@
         <div class="col-xs-4 ">
             <button class="btn-primary btn-sm" onclick="ali()">支付宝支付</button>
         </div>
+        <hr>
+        <div id="zfb" style="width:100px;height:300px;">
+1
+        </div>
     </div>
 </div>
 
@@ -41,12 +45,15 @@
             type: "get",
             url: 'ali-pay/',
             success: function (res) {
-                var resData = JSON.parse(res);
-                const div = document.createElement('div')
-                div.id = 'alipay'
-                div.innerHTML = resData.data
-                document.body.appendChild(div)
-                document.querySelector('#alipay').children[0].submit() // 执行后会唤起支付宝
+                // alert(res);
+                // var resData = JSON.parse(res);
+                // const div = document.createElement('div')
+                $("#zfb").html(res);
+                // $('#zfb').html('111');
+                // div.id = 'alipay'
+                // div.innerHTML = resData.data
+                // document.body.appendChild(div)
+                // document.querySelector('#alipay').children[0].submit() // 执行后会唤起支付宝
             }
         })
     }
