@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'home'],function(){
         Route::get('index','Home\IndexController@index');
+        Route::get('notice','Home\IndexController@notice');
         Route::get('test','Home\IndexController@test');
         Route::get('develop','Home\IndexController@develop');
         Route::get('trade','Home\tradeController@trade');

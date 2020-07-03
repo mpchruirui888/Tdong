@@ -12,8 +12,14 @@ class IndexController extends Controller
 
     public function index()
     {
+        $head =  $header = getallheaders();
+        dd($head);
+        return view('home.index');
+    }
 
-        dd(12342);
+    public function notice()
+    {
+        return view('home.notice');
     }
 
     public function test()
@@ -25,5 +31,10 @@ class IndexController extends Controller
     {
         Log::info('User failed to login.', ['id' => 30968]);
         dd('下测试得到');
+    }
+
+    public function token()
+    {
+
     }
 }
