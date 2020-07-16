@@ -35,6 +35,8 @@ class trade implements ShouldQueue
        $this->cancelOrder($this->data);
     }
 
+    
+    
     public function cancelOrder($data)
     {
         if($data->data['status'] == 1){

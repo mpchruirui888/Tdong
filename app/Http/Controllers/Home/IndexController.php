@@ -8,26 +8,25 @@ use Illuminate\Support\Facades\Log;
 
 class IndexController extends Controller
 {
-    //
-
     public function index()
     {
-        if (!function_exists('getallheaders')) {
+         if (!function_exists('getallheaders')) {
 
-            function getallheaders() {
-                $headers = array();
-                foreach ($_SERVER as $name => $value) {
-                    if (substr($name, 0, 5) == 'HTTP_') {
-                        $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
-                    }
-                }
-                return $headers;
-            }
+             function getallheaders() {
+                 $headers = array();
+                 foreach ($_SERVER as $name => $value) {
+                     if (substr($name, 0, 5) == 'HTTP_') {
+                         $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+                     }
+                 }
+                 return $headers;
+             }
 
-        }
-        var_dump(getallheaders());
-        die;
-        return view('home.index');
+         }
+         $res = getallheaders();
+        return   json_encode(['data'=>$res]);
+//         dd($res);
+//        return view('home.index');
     }
 
     public function notice()

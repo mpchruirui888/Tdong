@@ -10,7 +10,7 @@
 <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 <h1>收消息</h1>
 <script>
-    ws = new WebSocket('ws://127.0.0.1:9502');
+    ws = new WebSocket('ws://127.0.0.1:9503');
     // var content = prompt("你好！");
     ws.onopen = function(e){
         alert('连接成功！');
